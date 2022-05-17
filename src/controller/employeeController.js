@@ -1,6 +1,5 @@
 const pool = require('../../config/dbConfig');
 const asyncHandler = require('express-async-handler');
-const { response } = require('express');
 
 const getEmployees = asyncHandler((req, res) => {
     pool.query("SElECT * FROM employees", (error, result) => {
